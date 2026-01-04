@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: hwb(292 39% 38%);
+    color: #333;
+}
+
+.header {
+    background: hsl(291, 45%, 67%);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    color: hsl(46, 73%, 6%);
+}
+
+.main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title {
+    text-align: center;
+    color: #a65c85;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 12px;
+    background: hsl(305, 100%, 76%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsl(0, 0%, 100%);
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.form-links a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #e8eaec;
+}
+
+.offers {
+    text-align: center;
+}
+
+.footer {
+    background: hwb(313 61% 11%);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer a {
+    display: block;
+    margin: 6px 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(4, 3, 3);
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
